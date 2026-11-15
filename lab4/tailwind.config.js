@@ -1,0 +1,28 @@
+/** @type {import('tailwindcss').Config} */
+
+// Кольори й шрифти перенесено зі зразка оформлення (znu-lab-starters,
+// 04-slots-provide). Компоненти беруть значення лише звідси, власних
+// кольорів у них немає.
+export default {
+  content: ['./index.html', './src/**/*.{vue,js}'],
+  theme: {
+    extend: {
+      colors: {
+        ink: '#14161B',
+        deep: '#1E2129',
+        surface: '#F1F3F5',
+        edge: '#DCE0E5',
+        muted: '#6B7280',
+        paper: '#FFFFFF',
+        accent: '#2EC4B6',
+        client: '#FF6B35',
+      },
+      fontFamily: {
+        display: ['Unbounded', 'Cambria', 'serif'],
+        body: ['"IBM Plex Sans"', 'Calibri', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', '"Courier New"', 'monospace'],
+      },
+    },
+  },
+  plugins: [],
+}
